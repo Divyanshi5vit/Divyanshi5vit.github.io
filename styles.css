@@ -1,0 +1,139 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Body styles */
+body {
+    font-family:'Trebuchet MS';
+    background-color:honeydew;
+    background-image: url('tech2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+}
+
+/* Header styles */
+header {
+    background-color: #45b438ab;
+    color: #060000;
+    padding: 20px 0;
+   
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+header h1 {
+    font-size: 30px;
+
+   
+}
+
+header nav ul {
+    list-style-type: none;
+   
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+   
+}
+
+header nav ul li a {
+    color: #0d0000;
+    text-decoration:none;
+    font-weight:900;
+    background-color: rgba(255, 255, 255, 0.262);
+    border-radius: 3px;
+    padding: 2px;
+    
+    
+}
+header nav ul li a:hover{
+    border:#dde5dd92 2px solid ;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)x;
+    padding:8px;
+    transition: all 0.4s ease;
+}
+
+
+
+/* Main container styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Section styles */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Project styles */
+.project {
+    margin-bottom: 20px;
+}
+.project:hover, .class1:hover{
+    background-color:rgba(146, 234, 146, 0.61);
+    transition: all 0.3s ease;
+    border:rgba(146, 234, 146, 0.61) 1px ; 
+    box-shadow: 0 0 10px rgba(24, 39, 31, 0.415);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+h2{
+    background-color: #1dda2057;
+    border-radius: 2px;
+    padding:2px;
+    padding-left:5px;
+}
+h2:hover{
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+    }
+}
+.class2{
+    background-image: url('green.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
