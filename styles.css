@@ -34,7 +34,7 @@ header .container {
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 40px;
   
 }
 header h1:hover{
@@ -74,6 +74,7 @@ header nav ul li a {
     background-color: rgba(255, 255, 255, 0.538);
     border-radius: 3px;
     padding: 2px;
+    font-size: 20px;
     
     
 }
@@ -81,7 +82,7 @@ header nav ul li a:hover{
     border:#dde5dd92 2px solid ;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)x;
-    padding:8px;
+    padding:10px;
     transition: all 0.4s ease;
 }
 
@@ -102,6 +103,37 @@ section {
 section h2 {
     margin-bottom: 20px;
 }
+
+
+h2 {
+    background-color: #1dda2057;
+    border-radius: 2px;
+    padding: 2px;
+    padding-left: 5px;
+    position: relative; 
+}
+
+h2::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: #1dda2057;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+h2:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 /* Project styles */
 .project {
@@ -129,16 +161,7 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
-h2{
-    background-color: #1dda2057;
-    border-radius: 2px;
-    padding:2px;
-    padding-left:5px;
-}
-h2:hover{
-    padding: 5px;
-    transition: all 0.3s ease;
-}
+
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -155,3 +178,36 @@ h2:hover{
     background-size: cover;
 }
 
+#textbox {
+    width: 300px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#textbox {
+    width: 500px; 
+    height:300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#email{
+    width: 300px; 
+    height:30px;
+    padding:10px;
+}
+
+#mailbox{
+    border:#333 5px;
+    border-style: dotted;
+    padding: 10px;
+}
+#send{
+    background-color:darkolivegreen ;
+    color:lightyellow;
+    width:70px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 20px;
+    
+}
