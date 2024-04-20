@@ -183,12 +183,6 @@ footer {
 }
 
 #textbox {
-    width: 300px; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-#textbox {
     width: 90%; 
     max-width: 500px; 
     height: 150px; 
